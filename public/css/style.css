@@ -1,0 +1,538 @@
+html {
+    height: 100%;
+    /* overflow: hidden; */
+}
+
+body {
+    height: 100%;
+    margin: 0px;
+    font-family: 'Raleway', sans-serif;
+}
+
+header .name {
+    font-size: 1.4rem;
+    letter-spacing: 0.1em;
+    position: relative;
+    z-index: 1000;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+nav {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    /* transform: translate3d(0, -100%, 0); */
+    z-index: -100;
+    background: #07182bb8;
+    display: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+#iconMenu::after {
+    content: "";
+    width: 100%;
+    height: 3px;
+    background: #ffffff;
+    position: absolute;
+    right: 0;
+    top: -4px;
+}
+
+#iconMenu::before {
+    content: "";
+    width: 100%;
+    height: 3px;
+    background: #ffffff;
+    position: absolute;
+    right: 0;
+    bottom: -4px;
+}
+
+div#iconMenu {
+    position: relative;
+    width: 50px;
+    height: 22px;
+    cursor: pointer;
+}
+
+#generalIcons {
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+div.iconLinks {
+    display: flex;
+    margin-right: 31px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 40px 0;
+}
+
+div.iconLinks a {
+    display: block;
+    margin-right: 25px;
+    font-size: 2rem;
+}
+
+div#iconMenu hr {
+    width: 100%;
+    height: 3px;
+    background: #ffffff;
+    position: absolute;
+    right: 0;
+    bottom: 9.6px;
+    border: none;
+    margin: 0;
+}
+
+header a {
+    color: white;
+}
+
+nav#navStyle ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav#navStyle a {
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    display: inline;
+    letter-spacing: 8.5px;
+}
+
+nav#navStyle li {
+    margin: 35px 0;
+    position: relative;
+}
+
+nav#navStyle ul li a::after {
+    content: "";
+    width: 0;
+    height: 7px;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    bottom: -9px;
+    transition: 0.3s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+nav#navStyle ul li a:hover:after {
+    width: 100%;
+}
+
+div#backgroundColor {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: -200;
+    background: #07182b;
+}
+
+
+div#backgroundImages div:first-child {
+    background: url(../images/fistStain-01.svg) no-repeat;
+    background-size: 100%;
+    width: 100%;
+    max-width: 1273px;
+    height: 100%;
+    position: absolute;
+    right: -17px;
+    top: -17px;
+}
+
+div#backgroundImages {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    z-index: -100;
+}
+
+section#background {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+div#backgroundImages div:last-child {
+    max-width: 826px;
+    height: 100%;
+    width: 45%;
+    position: absolute;
+    left: 0;
+    background: url(../images/fistStain-02.svg) no-repeat;
+    background-size: 100%;
+    background-position: bottom;
+}
+
+
+
+
+
+
+#scrollIcon {
+    position: relative;
+    width: 100%;
+    top: -103px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .chevron {
+    position: absolute;
+    width: 28px;
+    height: 8px;
+    opacity: 0;
+    transform: scale3d(0.5, 0.5, 0.5);
+    animation: move 3s ease-out infinite;
+  }
+  
+  .chevron:first-child {
+    animation: move 3s ease-out 1s infinite;
+  }
+  
+  .chevron:nth-child(2) {
+    animation: move 3s ease-out 2s infinite;
+  }
+  
+  .chevron:before,
+  .chevron:after {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    background: white;
+  }
+  
+  .chevron:before {
+    left: 0;
+    transform: skew(0deg, 30deg);
+  }
+  
+  .chevron:after {
+    right: 0;
+    transform: skew(0deg, -30deg);
+  }
+  
+  @keyframes move {
+    25% {
+      opacity: 1;
+  
+    }
+    33% {
+      opacity: 1;
+      transform: translateY(30px);
+    }
+    67% {
+      opacity: 1;
+      transform: translateY(40px);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+    }
+  }
+  
+
+
+
+
+
+#whiteArrow:before, #whiteArrow:after {
+    background: white;
+}
+
+#greenArrow:before, #greenArrow:after {
+    background: #d3ff4a;
+}
+
+div#scrollIcon p {
+    color: white;
+    position: absolute;
+    top: 53px;
+}
+
+div#scrollDots {
+    position: relative;
+    top: -100px;
+    display: flex;
+    justify-content: center;
+    display: none;
+}
+
+div#scrollDots ul li {
+    width: 15px;
+    height: 15px;
+    margin: 10px;
+    background: #d3ff4a;
+    border-radius: 20px;
+}
+
+div#scrollDots ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+main {
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    /* display: none; */
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fullScreen {
+    width: 100%;
+    height: 100%;
+}
+
+.imageSection {
+    width: 100%;
+    position: relative;
+    height: 100%;
+}
+
+div#one div:first-child {
+    background: url(../images/imgSectionOne-01.svg) no-repeat;
+    background-size: 18%;
+    background-position: 58% 23%;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.textSection {
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    z-index: 2;
+}
+
+div#one div:last-child {
+    background: url(../images/imgSectionOne-02.svg) no-repeat;
+    background-size: 21%;
+    height: 100%;
+    background-position: 79% 86%;
+    position: absolute;
+    width: 100%;
+}
+
+.horLines:after {
+    content: ' ';
+    width: 145px;
+    height: 6px;
+    background: #d3ff4a;
+    position: absolute;
+    top: 21px;
+    left: 37px;
+    border-radius: 10px;
+}
+
+.horLines:before {
+    content: ' ';
+    width: 151px;
+    height: 6px;
+    background: #d3ff4a;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.horLines {
+    position: relative;
+    height: 27px;
+    margin: 40px 0;
+}
+
+.textSection h2 {
+    font-size: 7.3rem;
+
+    font-weight: 400;
+    margin: 0;
+    letter-spacing: 5px;
+    line-height: 103px;
+}
+.upper{
+     text-transform: uppercase;   
+}
+
+.mainContent {
+    margin-left: 200px;
+}
+
+.textSection h1, .textSection h3 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+
+.textSection span {
+    margin-left: 36px;
+}
+
+main section {
+    position: relative;
+}
+
+.button button {font-family: 'Raleway';height: 57px;width: 180px;border-radius: 58px;border: 2px solid white;background: #364353;color: white;font-size: 1.2rem;text-transform: uppercase;letter-spacing: 3px;transition: all 0.3s ease-in;cursor: pointer;}
+
+.button button:hover {
+    background: #07182b;
+}
+
+div#principalImage {
+    background: url(../images/imgSectionTwo-01.svg) no-repeat;
+    background-size: 28%;
+    background-position: 76% 32%;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+div#three div {
+    background: url(../images/imgSectionThree-02.svg) no-repeat;
+    background-size: 35%;
+    background-position: 82% 58%;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.sOne {
+    background: url(../images/singleParts-01.svg) no-repeat;
+    background-size: 5%;
+    background-position: 65% 31%;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+section#singleParts {
+    width: 100%;
+    height: 100%;
+}
+
+.sTwo {
+    background: url(../images/singleParts-02.svg) no-repeat;
+    background-size: 4%;
+    background-position: 81% 50%;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.sThree {
+    background: url(../images/singleParts-03.svg) no-repeat;
+    background-size: 3.5%;
+    background-position: 69% 20%;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.sFour {
+    background: url(../images/singleParts-04.svg) no-repeat;
+    background-size: 4%;
+    background-position: 75% 16%;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.sFive {
+    background: url(../images/singleParts-05.svg) no-repeat;
+    background-size: 3.5%;
+    background-position: 80% 33%;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+div#bigContent {
+    width: 100%;
+    height: 100%;
+    transform: translateY(0px);
+}
+
+.orangeLine {
+    background: url(../images/orangeLine-01.svg) no-repeat;
+    background-size: 26.5%;
+    background-position: center bottom;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.orangePlane {
+    background: url(../images/orangePlane-01.svg) no-repeat;
+    background-size: 41.5%;
+    background-position: 61% 102%;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.greenLine {
+    background: url(../images/greenLine-01.svg) no-repeat;
+    background-size: 3.5%;
+    background-position: 80% 33%;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.greenPlane {
+    background: url(../images/greenPlane-01.svg) no-repeat;
+    background-size: 18.5%;
+    background-position: 84% 100%;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+
+
+.mainContent .iconLinks a {
+    color: white;
+    font-size: 3rem;
+    margin-right: 40px;
+}
