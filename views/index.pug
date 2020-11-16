@@ -1,9 +1,8 @@
 include common/header.pug
 include common/background.pug
-
-main
-    #bigContent
-        section#sectOne.flex.fullScreen
+main.swiper-container
+    #fullpage.swiper-wrapper(style = 'transform:translate3d(0px, 0, 0)')
+        section(data-hash="init" )#sectOne.swiper-slide.flex.fullScreen
             .textSection
                 .mainContent
                     h2.upper 
@@ -11,14 +10,16 @@ main
                         br 
                         |Moreno
                     .horLines
-                    h1 
+                        div
+                        div
+                    h3 
                         |Diseño y
                         br
                         span desarrollo web
             #one.imageSection
                 div
                 div
-        section#sectTwo.flex.fullScreen
+        section(data-hash="works")#sectTwo.swiper-slide.flex.fullScreen
             .textSection
                 .mainContent
                     h2 
@@ -26,9 +27,11 @@ main
                         br 
                         |/ Proyectos
                     .horLines
+                        div
+                        div                    
                     h3 CMS  y desarrollo propio 
                     .button
-                        button Ver más
+                        button#moreWorks Ver más
             #two.imageSection
                 div#principalImage
                 section#singleParts
@@ -37,11 +40,13 @@ main
                     .sThree
                     .sFour
                     .sFive
-        section#sectThree.flex.fullScreen
+        section(data-hash="about")#sectThree.swiper-slide.flex.fullScreen
             .textSection
                 .mainContent
                     h2 Sobre mi
                     .horLines
+                        div
+                        div                   
                     h3
                         |Pasión por
                         br
@@ -50,7 +55,7 @@ main
                         button Ver más
             #three.imageSection
                 div
-        section#sectFour.flex.fullScreen
+        section(data-hash="contact")#sectFour.swiper-slide.flex.fullScreen
             .textSection
                 .mainContent
                     h2 
@@ -58,6 +63,8 @@ main
                         br
                         |contacto
                     .horLines
+                        div
+                        div                    
                     h3 aurorams94@gmail.com
                     .iconLinks
                         a(href="")
@@ -67,3 +74,7 @@ main
             #four.imageSection
                 .orangePlane
                 .greenPlane
+    #opacity.swiper-pagination
+    #curtain
+
+script(src="/js/index.js" type='module')
