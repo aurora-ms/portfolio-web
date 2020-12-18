@@ -1,0 +1,27 @@
+#workPage.fullPage.swiper-container.display
+
+    .swiper-wrapper.flex-horiz
+        each val, index in works
+            section.swiper-slide
+                .imageSection
+                    img(class="background"+ index src=val.fondo, alt='fondo')
+                    picture
+                        source(type="image/webp" srcset=val.webp)
+                        img(class="img"+ index src=val.img, alt=val.alt, width=val.width, height=val.height)
+                        
+                .textSectionWorks
+                    .works-content
+                        h2=val.titulo
+                        h4=val.subtitulo
+                        hr
+                        .button
+                            a(href="/"+val.redirect) Ver más
+    .swiper-button-next
+    .swiper-button-prev
+    #closeWorks    
+        //- svg(xmlns='http://www.w3.org/2000/svg' width='100%' height='34' viewbox='0 0 67 34')
+        //-     g(fill='none' fill-rule='evenodd' stroke='#FFF' stroke-linecap='round' transform='translate(2 1)')
+        //-         path(stroke-width='2' d='M0,15.5533333 L64,15.5533333')
+        //-         polyline(stroke-width='2' points='15.556 0 0 15.556 15.556 31.111')
+        //- //- i.fa.fa-angle-double-left
+                        

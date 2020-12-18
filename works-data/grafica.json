@@ -1,0 +1,17 @@
+[
+    {
+        "imgPrincipalSrc": "../images/works/grafica/img_principal.jpg",
+        "imgPrincipalAlt": "Diseño web Gráfica y escénica",
+        "titulo": "Gráfica y Escénica",
+        "funciones": "Diseño, desarrollo web y posicionamiento",
+        "fecha": "Enero 2019",
+        "web": "https://www.graficayescenica.com/",
+        "backgClass": "backgGrafica",
+        "imgDosSrc": "../images/works/grafica/img_3.png",
+        "imgDosAlt": "Desarrollo web",
+        "concepto": "Proyecto para el desarrollo de una web responsive con diversas secciones que mostraran los servicios disponibles como los trabajos realizados por la empresa",
+        "desarrollo": "Migración de contenidos desde una web antigua creada con Jommla a una nueva creada con Wordpress, además de instalación de Google analytics y SEO básico",
+        "empresa":  "Jer Publicidad"
+
+    }
+]

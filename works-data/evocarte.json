@@ -1,0 +1,17 @@
+[
+    {
+        "imgPrincipalSrc": "../images/works/evocarte/img_principal.jpg",
+        "imgPrincipalAlt": "Diseño web El Casar de la Inesa",
+        "titulo": "Evocarte",
+        "funciones": "Diseño, desarrollo web y posicionamiento",
+        "fecha": "Enero 2019",
+        "web": "https://www.evocarte.com/",
+        "backgClass": "backgEvocarte",
+        "imgDosSrc": "../images/works/evocarte/img_3.png",
+        "imgDosAlt": "Desarrollo web",
+        "concepto": "Web para empresa de guias turisticas y experiencias en España. Este proyecto fue creado con un aspecto delicado concordando con el tipo de visitas que se ofrecen.",
+        "desarrollo": "Creación de web responsibe con el CMS Wordpress desde 0",
+        "empresa":  "Jer Publicidad"
+
+    }
+]

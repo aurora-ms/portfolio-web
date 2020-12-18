@@ -1,0 +1,17 @@
+[
+    {
+        "imgPrincipalSrc": "../images/works/el_casar/img_principal.jpg",
+        "imgPrincipalAlt": "Diseño web El Casar de la Inesa",
+        "titulo": "El Casar de La Inesa",
+        "funciones": "Diseño, desarrollo web y posicionamiento",
+        "fecha": "Octubre 2018",
+        "web": "https://www.elcasardelainesa.com/",
+        "backgClass": "backgElCasar",
+        "imgDosSrc": "../images/works/el_casar/img_3.png",
+        "imgDosAlt": "Desarrollo web",
+        "concepto": "Creación de una web jovial con aspecto ecologico y natural. Buscar una estetica que invitara a realizar actividades relacionadas con la naturaleza y a alojarse en este albergue juvenil",
+        "desarrollo": "Creación de web responsibe con el CMS Wordpress desde 0",
+        "empresa":  "Jer Publicidad"
+
+    }
+]

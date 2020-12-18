@@ -1,0 +1,37 @@
+include common/header.pug
+main.allWorks
+    section
+        img(src=showData.imgPrincipalSrc alt=showData.imgPrincipalAlt)
+    section.totalHeight
+        div
+            h1=showData.titulo
+            hr
+        .colorFondo
+            .central.threeColums
+                div
+                    h3 Funciones
+                    p=showData.funciones
+                div
+                    h3 Fecha
+                    p=showData.fecha
+                div
+                    h3 Web
+                    p=showData.web
+            div(class=showData.backgClass)
+            .central.twoColums
+                div.item1
+                    img(src=showData.imgDosSrc alt=showData.imgDosAlt)
+                div.item2
+                    div.flex
+                        span 01
+                        h4 Concepto
+                    p=showData.concepto
+                div.item3
+                    div.flex
+                        span 02
+                        h4 Desarrollo
+                    p=showData.desarrollo
+    section.flex.lastSection
+        i.fa.fa-asterisk
+        p Proyecto desarrollado con la empresa 
+        a(href="http://jerpublicidad.com")=showData.empresa

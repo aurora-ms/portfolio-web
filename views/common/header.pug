@@ -1,32 +1,31 @@
 doctype html
 html
     head
-        link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
-        link( href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet")
-        link(rel="stylesheet" type="text/css" href="/css/swiper-bundle.css")
-
-        link(rel="stylesheet" type="text/css"  href= '/css/style.css')
-
-header#headerStyle
-    .content
-        a.name(href="") Aurora MS
-        #generalIcons
-            .iconLinks
-                a(href="")
-                    i.fa.fa-github
-                a(href="")
-                    i.fa.fa-linkedin-square
-            #iconMenu
-                hr
-        nav#navStyle
-            ul
-                li
-                    a(href="") Inicio
-                li
-                    a(href="") Trabajos
-                li
-                    a(href="") Sobre mi
-                li
-                    a(href="") Contacto
+        link(rel="stylesheet preload " href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' as="style" )
+        link(rel="stylesheet preload " href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap" as="style")
+        link(rel="stylesheet preload" type="text/css" href="/css/swiper-bundle.css" as="style")
+        link(rel="stylesheet preload " type="text/css"  href= '/css/style.css' as="style")
+    body.generalDocument.fullPage
+        header.positionFix.mediumLevel
+            .menuContent.flex
+                a.menufont(href="") Aurora MS
+                .aligItemsCe.positionRel.flex
+                    .iconLinks.flex
+                        a(href="")
+                            i.fa.fa-github
+                        a(href="")
+                            i.fa.fa-linkedin-square
+                    #iconMenu.positionRel
+                        hr.positionAbs
+                nav#navStyle.downLevel.fullPage.positionFix.flex.aligItemsCe
+                    ul
+                        li
+                            a(href="") Inicio
+                        li
+                            a(href="") Trabajos
+                        li
+                            a(href="") Sobre mi
+                        li
+                            a(href="") Contacto
 
 

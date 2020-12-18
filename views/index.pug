@@ -1,80 +1,76 @@
 include common/header.pug
 include common/background.pug
-main.swiper-container
-    #fullpage.swiper-wrapper(style = 'transform:translate3d(0px, 0, 0)')
-        section(data-hash="init" )#sectOne.swiper-slide.flex.fullScreen
-            .textSection
-                .mainContent
-                    h2.upper 
-                        |Aurora 
-                        br 
-                        |Moreno
-                    .horLines
-                        div
-                        div
-                    h3 
-                        |Diseño y
-                        br
-                        span desarrollo web
-            #one.imageSection
-                div
-                div
-        section(data-hash="works")#sectTwo.swiper-slide.flex.fullScreen
-            .textSection
-                .mainContent
-                    h2 
-                        |Trabajos 
-                        br 
-                        |/ Proyectos
-                    .horLines
-                        div
-                        div                    
-                    h3 CMS  y desarrollo propio 
-                    .button
-                        button#moreWorks Ver más
-            #two.imageSection
-                div#principalImage
-                section#singleParts
-                    .sOne
-                    .sTwo
-                    .sThree
-                    .sFour
-                    .sFive
-        section(data-hash="about")#sectThree.swiper-slide.flex.fullScreen
-            .textSection
-                .mainContent
-                    h2 Sobre mi
-                    .horLines
-                        div
-                        div                   
-                    h3
-                        |Pasión por
-                        br
-                        span las cosas bien hechas
-                    .button
-                        button Ver más
-            #three.imageSection
-                div
-        section(data-hash="contact")#sectFour.swiper-slide.flex.fullScreen
-            .textSection
-                .mainContent
-                    h2 
-                        |Datos de
-                        br
-                        |contacto
-                    .horLines
-                        div
-                        div                    
-                    h3 aurorams94@gmail.com
-                    .iconLinks
-                        a(href="")
-                            i.fa.fa-github
-                        a(href="")
-                            i.fa.fa-linkedin-square
-            #four.imageSection
-                .orangePlane
-                .greenPlane
-    #opacity.swiper-pagination
-    #curtain
+main.fullPage.positioRel
+    #principalPage.fullPage.swiper-container
+        #totalHeight.swiper-wrapper.fullPage
+            section(data-hash="init" )#sectOne.swiper-slide.flex
+                #textSection
+                        h2.upper 
+                            |Aurora 
+                            br 
+                            |Moreno
+                        .horLines
+                            div
+                            div
+                        h1
+                            |Diseño y
+                            br
+                            span desarrollo web
+                #imgSectionOne.flex
+                    div
+                    div
+            section(data-hash="works")#sectTwo.swiper-slide.flex
+                #textSection
+                        h2 
+                            |Trabajos 
+                        .horLines
+                            div
+                            div                    
+                        h3 CMS  y desarrollo propio 
+                        .button
+                            button#moreWorks Ver más
+                #imgSectionTwo
+                    div#principalImage
+                    div#singleParts
+                        .sOne
+                        .sThree
+                        .sFour
+                        .sTwo
+                        .sFive
+            section(data-hash="about")#sectThree.swiper-slide.flex
+                #textSection
+                        h2 Sobre mí
+                        .horLines
+                            div
+                            div                   
+                        h3
+                            |Pasión por
+                            br
+                            span las cosas bien hechas
+                        .button
+                            button Ver más
+                #imgSectionThree.flex
+                    div
+            section(data-hash="contact")#sectFour.swiper-slide.flex
+                #textSection
+                        h2 
+                            |Datos de
+                            br
+                            |contacto
+                        .horLines
+                            div
+                            div                    
+                        h3 aurorams94@gmail.com
+                        .contactLinks.flex
+                            a(href="")
+                                i.fa.fa-github
+                            a(href="")
+                                i.fa.fa-linkedin-square
+                #imgSectionFour.flex
+                    .orangePlane
+                    .greenPlane
+        #opacity.swiper-pagination
+        #curtain
+    include works.pug
 
 script(src="/js/index.js" type='module')

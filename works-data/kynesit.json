@@ -1,0 +1,17 @@
+[
+    {
+        "imgPrincipalSrc": "../images/works/kynesit/img_principal.jpg",
+        "imgPrincipalAlt": "Diseño web Kynesit",
+        "titulo": "Kynesit",
+        "funciones": "Diseño, desarrollo web y posicionamiento",
+        "fecha": "Noviembre 2018",
+        "web": "https://www.kynesitfisioterapia.com/",
+        "backgClass": "backgKynesit",
+        "imgDosSrc": "../images/works/kynesit/img_3.png",
+        "imgDosAlt": "Desarrollo web",
+        "concepto": "Web de fisioterapia integral, en la que se buscaba mostrar todos los servicios y talleres de forma facil con un toque dulce y cercano",
+        "desarrollo": "Se busco realizar un diseño adaptativo sin el uso de plantillas pero con el CMS Worpress para que los clientes pudieran autogestionarla.",
+        "empresa":  "Jer Publicidad"
+
+    }
+]

@@ -1,0 +1,57 @@
+[
+    {
+        "titulo": "Gráfica y escénica",
+        "subtitulo": "Empresa de impresión",
+        "img": "./images/works/img-principal-01.png",
+        "webp": "./images/works/img-principal-01.webp",
+        "alt": "imagen grafica y escenica",
+        "fondo": "./images/works/stain-backgr-01.png",
+        "redirect": "./trabajos/grafica_escenica",
+        "width":"583",
+        "height": "773"
+    },
+    {
+        "titulo": "Kynesit",
+        "subtitulo": "Clinica de Fisioterapia",
+        "img": "./images/works/img-principal-02.png",
+        "webp": "./images/works/img-principal-02.webp",
+        "alt": "imagen Kynesit",
+        "fondo": "./images/works/stain-backgr-02.png",
+        "redirect": "./trabajos/kynesit",
+        "width":"690",
+        "height": "621"
+    },
+    {
+        "titulo": "Evocarte",
+        "subtitulo": "Empresa de experiencias y guias turísticas",
+        "img": "./images/works/img-principal-03.png",
+        "webp": "./images/works/img-principal-03.webp",
+        "alt": "imagen Evocarte",
+        "fondo": "./images/works/stain-backgr-03.png",
+        "redirect": "./trabajos/evocarte",
+        "width":"895",
+        "height": "676"
+    },
+    {
+        "titulo": "El Casar de la Inesa",
+        "subtitulo": "Albergue juvenil ",
+        "img": "./images/works/img-principal-04.png",
+        "webp": "./images/works/img-principal-04.webp",
+        "alt": "imagen El Casar de la inesa",
+        "fondo": "./images/works/stain-backgr-04.png",
+        "redirect": "./trabajos/el_casar",
+        "width":"883",
+        "height": "649"
+    },
+    {
+        "titulo": "BeExpand",
+        "subtitulo": "Empresa de internacionalización",
+        "img": "./images/works/img-principal-05.png",
+        "webp": "./images/works/img-principal-05.webp",
+        "alt": "imagen BeExpand",
+        "fondo": "./images/works/stain-backgr-05.png",
+        "redirect": "./trabajos/beExpand",
+        "width":"711",
+        "height": "722"
+    }
+]
