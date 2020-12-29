@@ -1,76 +1,81 @@
+mixin lines
+    .horLines 
+        div
+        div 
+
+
 include common/header.pug
 include common/background.pug
-main.fullPage.positioRel
-    #principalPage.fullPage.swiper-container
-        #totalHeight.swiper-wrapper.fullPage
-            section(data-hash="init" )#sectOne.swiper-slide.flex
-                #textSection
-                        h2.upper 
-                            |Aurora 
-                            br 
-                            |Moreno
-                        .horLines
-                            div
-                            div
-                        h1
-                            |Diseño y
-                            br
-                            span desarrollo web
-                #imgSectionOne.flex
-                    div
-                    div
-            section(data-hash="works")#sectTwo.swiper-slide.flex
-                #textSection
-                        h2 
-                            |Trabajos 
-                        .horLines
-                            div
-                            div                    
-                        h3 CMS  y desarrollo propio 
-                        .button
-                            button#moreWorks Ver más
-                #imgSectionTwo
-                    div#principalImage
-                    div#singleParts
-                        .sOne
-                        .sThree
-                        .sFour
-                        .sTwo
-                        .sFive
-            section(data-hash="about")#sectThree.swiper-slide.flex
-                #textSection
-                        h2 Sobre mí
-                        .horLines
-                            div
-                            div                   
-                        h3
-                            |Pasión por
-                            br
-                            span las cosas bien hechas
-                        .button
-                            button Ver más
-                #imgSectionThree.flex
-                    div
-            section(data-hash="contact")#sectFour.swiper-slide.flex
-                #textSection
-                        h2 
-                            |Datos de
-                            br
-                            |contacto
-                        .horLines
-                            div
-                            div                    
-                        h3 aurorams94@gmail.com
-                        .contactLinks.flex
-                            a(href="")
-                                i.fa.fa-github
-                            a(href="")
-                                i.fa.fa-linkedin-square
-                #imgSectionFour.flex
-                    .orangePlane
-                    .greenPlane
-        #opacity.swiper-pagination
+main.fullPage
+    #principalPage.swiper-container.fullPage
+        .swiper-wrapper
+            section.swiper-slide(data-hash="init" )
+                .textContent
+                    h2.upper
+                        |Aurora 
+                        br 
+                        |Moreno
+                    +lines
+                    h1
+                        |Diseño y
+                        br
+                        span desarrollo web
+                .imageContent
+                    #sectOneImages
+                        img(src="/images/imgSectionOne-01.svg", alt="", width = 430, height= 463)
+                        img(src="/images/imgSectionOne-02.svg", alt="", width = 450, height= 484)
+            section.swiper-slide(data-hash="works" )
+                .textContent
+                    h2 Trabajos 
+                    +lines                
+                    h3 CMS  y desarrollo propio 
+                    .buttonContent
+                        button#moreWorks Ver más
+                .imageContent
+                    #sectTwoImages
+                        #imgTwoPrincipal
+                            img(src="/images/imgSectionTwo-01.svg", alt="", width = 430, height= 463)
+                        #imgTwoParts
+                            img(src="/images/singleParts-01.svg", alt="", width = 100, height= 149)
+                            img(src="/images/singleParts-02.svg", alt="", width = 100, height= 149)
+                            img(src="/images/singleParts-03.svg", alt="", width = 95, height= 141)
+                            img(src="/images/singleParts-04.svg", alt="", width = 100, height= 149)
+                            img(src="/images/singleParts-05.svg", alt="", width = 95, height= 141)
+            section.swiper-slide(data-hash="about" )
+                .textContent
+                    h2 Sobre mí
+                    +lines                
+                    h3
+                        |Pasión por
+                        br
+                        span las cosas bien hechas
+                    //- .buttonContent
+                    //-     button#moreAbout Ver más
+                .imageContent
+                    #sectThreeImage 
+                        img(src="/images/imgSectionThree-02.png", alt="", width = 430, height= 463)
+            section.swiper-slide(data-hash="contact" )
+                .textContent
+                    h2 
+                        |Datos de
+                        br
+                        |contacto
+                    +lines                
+                    a.mail(href="mailto:aurorams94@gmail.com") aurorams94@gmail.com
+                    .contactLinks.flex
+                        a(href="")
+                            i.fa.fa-github
+                        a(href="")
+                            i.fa.fa-linkedin-square
+                .imageContent  
+                    #sectFourImage 
+                        
+                        img(src="/images/orangePlane-01.svg", alt="", width = 430, height= 463)
+                        img(src="/images/greenPlane-01.svg", alt="", width = 430, height= 463)
+        #bulletsBottom.swiper-pagination
         #curtain
     include works.pug
+
+
 
 script(src="/js/index.js" type='module')

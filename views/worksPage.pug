@@ -1,23 +1,26 @@
-include common/header.pug
+include common/links.pug
 main.allWorks
+    div.return
+        a(href="/#works")
+            i.fa.fa-long-arrow-left
     section
         img(src=showData.imgPrincipalSrc alt=showData.imgPrincipalAlt)
-    section.totalHeight
-        div
-            h1=showData.titulo
+    section.contentWorks
+        div.tittleWork
+            h2=showData.titulo
             hr
         .colorFondo
             .central.threeColums
                 div
                     h3 Funciones
-                    p=showData.funciones
+                    h1=showData.funciones
                 div
                     h3 Fecha
                     p=showData.fecha
                 div
                     h3 Web
-                    p=showData.web
-            div(class=showData.backgClass)
+                    a.linkWeb(href=showData.web, target='_blank')=showData.web
+            #backimg(class=showData.backgClass)
             .central.twoColums
                 div.item1
                     img(src=showData.imgDosSrc alt=showData.imgDosAlt)
@@ -35,3 +38,5 @@ main.allWorks
         i.fa.fa-asterisk
         p Proyecto desarrollado con la empresa 
         a(href="http://jerpublicidad.com")=showData.empresa
+
+script(src="/js/works.js")

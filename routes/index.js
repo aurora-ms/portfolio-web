@@ -13,7 +13,7 @@ var beExpandWork = fs.readFileSync('./works-data/beExpand.json');
 
 const principalRoute = (req, res) => {
 
-    res.render('common/header', {
+    res.render('index', {
         works: works
     });
 

@@ -1,16 +1,5 @@
 [
     {
-        "titulo": "Gráfica y escénica",
-        "subtitulo": "Empresa de impresión",
-        "img": "./images/works/img-principal-01.png",
-        "webp": "./images/works/img-principal-01.webp",
-        "alt": "imagen grafica y escenica",
-        "fondo": "./images/works/stain-backgr-01.png",
-        "redirect": "./trabajos/grafica_escenica",
-        "width":"583",
-        "height": "773"
-    },
-    {
         "titulo": "Kynesit",
         "subtitulo": "Clinica de Fisioterapia",
         "img": "./images/works/img-principal-02.png",
@@ -53,5 +42,16 @@
         "redirect": "./trabajos/beExpand",
         "width":"711",
         "height": "722"
+    },
+    {
+        "titulo": "Gráfica y escénica",
+        "subtitulo": "Empresa de impresión",
+        "img": "./images/works/img-principal-01.png",
+        "webp": "./images/works/img-principal-01.webp",
+        "alt": "imagen grafica y escenica",
+        "fondo": "./images/works/stain-backgr-01.png",
+        "redirect": "./trabajos/grafica_escenica",
+        "width":"583",
+        "height": "773"
     }
 ]

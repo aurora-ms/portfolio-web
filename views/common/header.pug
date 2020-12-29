@@ -1,31 +1,31 @@
 doctype html
-html
-    head
-        link(rel="stylesheet preload " href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' as="style" )
-        link(rel="stylesheet preload " href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap" as="style")
-        link(rel="stylesheet preload" type="text/css" href="/css/swiper-bundle.css" as="style")
-        link(rel="stylesheet preload " type="text/css"  href= '/css/style.css' as="style")
-    body.generalDocument.fullPage
-        header.positionFix.mediumLevel
-            .menuContent.flex
-                a.menufont(href="") Aurora MS
-                .aligItemsCe.positionRel.flex
-                    .iconLinks.flex
-                        a(href="")
+html(lang='es')
+    include links.pug
+    body
+        header#header
+                a.menufont(href="/") Aurora MS
+                .headerContent
+                    .iconsHeader
+                        a(href="https://github.com/aurora-ms", target='_blank')
                             i.fa.fa-github
-                        a(href="")
+                        a(href="https://www.linkedin.com/in/aurora-m-moreno-s%C3%A1nchez-5617661a7/", target='_blank')
                             i.fa.fa-linkedin-square
-                    #iconMenu.positionRel
+                    #menuHeader
                         hr.positionAbs
-                nav#navStyle.downLevel.fullPage.positionFix.flex.aligItemsCe
+                nav#principalMenu
                     ul
                         li
-                            a(href="") Inicio
+                            a(href="/#init") Inicio
                         li
-                            a(href="") Trabajos
+                            a(href="/#works") Trabajos
                         li
-                            a(href="") Sobre mi
+                            a(href="/#about") Sobre mi
                         li
-                            a(href="") Contacto
+                            a(href="/#contact") Contacto
+                        .iconsMenu
+                            a(href="https://github.com/aurora-ms", target='_blank')
+                                i.fa.fa-github
+                            a(href="https://www.linkedin.com/in/aurora-m-moreno-s%C3%A1nchez-5617661a7/", target='_blank')
+                                i.fa.fa-linkedin-square
 
 

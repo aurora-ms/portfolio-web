@@ -4,7 +4,8 @@
         each val, index in works
             section.swiper-slide
                 .imageSection
-                    img(class="background"+ index src=val.fondo, alt='fondo')
+                    div
+                        img(class="background"+ index src=val.fondo, alt='fondo', width=val.width, height=val.height)
                     picture
                         source(type="image/webp" srcset=val.webp)
                         img(class="img"+ index src=val.img, alt=val.alt, width=val.width, height=val.height)
@@ -12,9 +13,9 @@
                 .textSectionWorks
                     .works-content
                         h2=val.titulo
-                        h4=val.subtitulo
                         hr
-                        .button
+                        h4=val.subtitulo
+                        .buttonContent
                             a(href="/"+val.redirect) Ver más
     .swiper-button-next
     .swiper-button-prev
