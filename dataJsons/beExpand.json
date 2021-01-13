@@ -1,7 +1,7 @@
 [
     {
         "imgPrincipalSrc": "../images/works/beExpand/img_principal.jpg",
-        "imgPrincipalAlt": "Diseño web El Casar de la Inesa",
+        "imgPrincipalAlt": "Diseño web BeExpand",
         "titulo": "BeExpand",
         "funciones": "Diseño, desarrollo web y posicionamiento",
         "fecha": "Marzo 2019",
@@ -10,7 +10,7 @@
         "imgDosSrc": "../images/works/beExpand/img_3.png",
         "imgDosAlt": "Desarrollo web",
         "concepto": "Creación de web para empresa de exportación con aspecto moderno e internacional",
-        "desarrollo": "Creación de web responsibe con el CMS Wordpress desde 0",
+        "desarrollo": "Creación de web responsive con el CMS Wordpress desde 0",
         "empresa":  "Jer Publicidad"
 
     }
