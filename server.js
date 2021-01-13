@@ -2,7 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 
 
-const {principalRoute, graficaWorkRoute} = require('./routes/index');
+const {principalRoute, worksRoute, aboutRoute} = require('./routes/index');
 
 
 const pug = require('pug');
@@ -18,6 +18,7 @@ app.set('view engine', 'pug');
 
 
 app.get('/', principalRoute);
-app.get('/trabajos/:work', graficaWorkRoute);
+app.get('/trabajos/:work', worksRoute);
+app.get('/about', aboutRoute);
 
 app.listen(3000)

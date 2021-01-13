@@ -1,0 +1,32 @@
+include common/header.pug
+include common/background.pug
+main.aboutPage
+    div.return
+        a(href="/#about")
+            i.fa.fa-long-arrow-left
+    .twoColumsAbout
+        img(src="./images/diseño-web-profesional.png", alt="")
+        div
+            h1
+                | dise&ntilde;o y 
+                br
+                |  desarrollo web
+            hr.green.line
+            ul
+                li Carrera en diseño gráfico y multimedia
+                li Master en programación web FullStack
+        div
+            h2 Sobre mi
+            hr.blue.line
+            p Me considero una persona tenaz y perfeccionista a la que le gustan los nuevos retos. Dado mi perfil en dos mundos tan cambiantes, me gusta estar al día en la actualidad de estos sectores a través de charlas o blogs además de participar en hackathones. 
+            br 
+            | Dispongo de vehículo propio y posibilidad de incorporación inmediata, además de flexibilidad horaria.
+        img(src="./images/desarrollo-web.png", alt="")
+    .twoColumsIcons
+        each val in about
+            div
+                img(src=val.iconImg, alt=val.iconAlt)
+                hr
+                h3=val.tittle
+                span=val.content
+script(src="/js/menu.js")

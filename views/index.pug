@@ -49,8 +49,8 @@ main.fullPage
                         |Pasión por
                         br
                         span las cosas bien hechas
-                    //- .buttonContent
-                    //-     button#moreAbout Ver más
+                    .buttonContent
+                        button#moreAbout Ver más
                 .imageContent
                     #sectThreeImage 
                         img(src="/images/imgSectionThree-02.png", alt="", width = 430, height= 463)
@@ -63,9 +63,9 @@ main.fullPage
                     +lines                
                     a.mail(href="mailto:aurorams94@gmail.com") aurorams94@gmail.com
                     .contactLinks.flex
-                        a(href="")
+                        a(href="https://github.com/aurora-ms", target='_blank')
                             i.fa.fa-github
-                        a(href="")
+                        a(href="https://www.linkedin.com/in/aurora-m-moreno-s%C3%A1nchez-5617661a7/", target='_blank')
                             i.fa.fa-linkedin-square
                 .imageContent  
                     #sectFourImage 
@@ -73,9 +73,9 @@ main.fullPage
                         img(src="/images/orangePlane-01.svg", alt="", width = 430, height= 463)
                         img(src="/images/greenPlane-01.svg", alt="", width = 430, height= 463)
         #bulletsBottom.swiper-pagination
-        #curtain
     include works.pug
 
 
 
 script(src="/js/index.js" type='module')
+script(src="/js/menu.js")

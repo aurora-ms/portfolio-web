@@ -1,25 +1,27 @@
 const fs = require('fs');
 
 
-var worksFile = fs.readFileSync('./works-data/works-data.json');
-var works = JSON.parse(worksFile);
+var worksFile = fs.readFileSync('./dataJsons/works-data.json');
 
-var elCasarWork = fs.readFileSync('./works-data/el_casar.json');
-var graficaWork = fs.readFileSync('./works-data/grafica.json');
-var evocarteWork = fs.readFileSync('./works-data/evocarte.json');
-var kynesitWork = fs.readFileSync('./works-data/kynesit.json');
-var beExpandWork = fs.readFileSync('./works-data/beExpand.json');
 
+var elCasarWork = fs.readFileSync('./dataJsons/el_casar.json');
+var graficaWork = fs.readFileSync('./dataJsons/grafica.json');
+var evocarteWork = fs.readFileSync('./dataJsons/evocarte.json');
+var kynesitWork = fs.readFileSync('./dataJsons/kynesit.json');
+var beExpandWork = fs.readFileSync('./dataJsons/beExpand.json');
+
+
+var about = fs.readFileSync('./dataJsons/about.json');
 
 const principalRoute = (req, res) => {
-
+    var works = JSON.parse(worksFile);
     res.render('index', {
         works: works
     });
 
 }
 
-const graficaWorkRoute = (req, res) => {
+const worksRoute = (req, res) => {
 
     switch (req.params.work) {
         case "el_casar":
@@ -44,7 +46,13 @@ const graficaWorkRoute = (req, res) => {
 
 }
 
+const aboutRoute = (req, res) => {
+    var showData = JSON.parse(about);
+    res.render('about', { about: showData });
+}
+
 module.exports = {
     principalRoute,
-    graficaWorkRoute
+    worksRoute,
+    aboutRoute
 }

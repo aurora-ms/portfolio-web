@@ -1,0 +1,38 @@
+[
+    {
+        "iconImg": "./images/iconAbout/icon-01.png",
+        "iconAlt": "Programas de diseño y edición",
+        "tittle": "Programas Adobe",
+        "content": "( Illustrator, Indesign, Photoshop, AfterEffects )"
+    },
+    {
+        "iconImg": "./images/iconAbout/icon-02.png",
+        "iconAlt": "Programas de diseño y edición",
+        "tittle": "Gestores de contenido CMS",
+        "content": "( WordPress, Prestashop, Woocomerce, Joomla )"
+    },
+    {
+        "iconImg": "./images/iconAbout/icon-03.png",
+        "iconAlt": "Programas de diseño y edición",
+        "tittle": "Diseño responsive",
+        "content": "( Código y diseño adaptados a diferentes formatos )"
+    },
+    {
+        "iconImg": "./images/iconAbout/icon-04.png",
+        "iconAlt": "Programas de diseño y edición",
+        "tittle": "Firebase y bases de datos",
+        "content": "( Despliege de aplicaciones en Firebase y control de usuarios y Cloud Store )"
+    },
+    {
+        "iconImg": "./images/iconAbout/icon-05.png",
+        "iconAlt": "Programas de diseño y edición",       
+        "tittle": "Control de JavaScript Node.js",
+        "content": "( Instalación de paquetes npm y conocimientos de Express )"
+    },
+    {
+        "iconImg": "./images/iconAbout/icon-06.png",
+        "iconAlt": "Programas de diseño y edición",
+        "tittle": "Github y Bootstrap ",
+        "content": "( Gestión de contenido y versiones en Github. Control de plantillas de Bootstrap )"
+    }
+]

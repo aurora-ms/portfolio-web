@@ -2,6 +2,9 @@ import anime from './anime.es.js';
 import Swiper from './swiper-bundle.esm.browser.min.js'
 
 
+// import Swiper from 'https://unpkg.com/swiper/swiper-bundle.esm.browser.min.js'
+
+
 
 var imagesAnimations = {
     img1: () => {
@@ -217,7 +220,7 @@ var newWorks = {
 
 async function animationSliders() {
     await visibility()
-    
+
     textContent.normal()
     switch (swiperGeneral.activeIndex) {
         case 0:
@@ -358,20 +361,22 @@ function bullets() {
     document.getElementById('bulletsBottom').style = 'opacity: 1'
 }
 
+document.getElementById('moreAbout').addEventListener('click', () => {
 
-var state = false;
+    document.getElementById('curtain').style.top='0'
+    setTimeout(() => {
+        window.location.pathname = './about'
+    }, 1000);
 
-document.getElementById('menuHeader').addEventListener('click', () => {
-    if (state === false) {
-        document.querySelector('#menuHeader').classList.add('close')
-        state = !state
-        document.querySelector('nav').style.top = '0'
-    } else {
-        document.querySelector('#menuHeader').classList.remove('close')
-        state = !state
-        document.querySelector('nav').style.top = '-120%'
-    }
+
+
 })
+
+
+
+
+
+
 
 
 

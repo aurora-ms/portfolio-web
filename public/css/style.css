@@ -695,7 +695,30 @@ div#sectFourImage img {
         right: 9vw;
     }
     div#sectThreeImage img {
-        height: 75%;
+        height: auto;
+    width: 300px;
+    }
+    a.mail {
+        font-size: 4vw;
+    }
+    .contactLinks a {
+        font-size: 10vw;
+    }
+
+    .contactLinks {
+        justify-content: center;
+    }
+
+    #sectFourImage img:nth-child(1) {
+        width: auto;
+        height: 38%;
+        left: 0;
+    }
+
+    #sectFourImage img:nth-child(2) {
+
+        height: 25%;
+
     }
 }
 
@@ -712,6 +735,20 @@ div#sectFourImage img {
     #principalPage h1, #principalPage h3 {
         font-size: 4vw;
     }
+    .buttonContent button, .buttonContent a {
+        height: 8vh;
+        font-size: 3.2vw;
+    }
+
+    .mail {
+        font-size: 5.6vw;
+    }
+
+    .contactLinks a {
+
+        font-size: 8vw;
+
+    }
 }
 
 /* Estilos elementos slider */
@@ -727,7 +764,7 @@ div#curtain {
     position: absolute;
     top: 0;
     z-index: 13;
-    transition: all 1s cubic-bezier(0, 0, 0.41, 1.1);
+    transition: all 1s linear;
 }
 
 .upper {
@@ -961,12 +998,14 @@ picture {
     font-size: 3vw;
     position: fixed;
     left: 40px;
-    top: 40px;
+    top: 80px;
     transition: transform 0.5s ease;
 }
+
 .return a:hover {
-transform: translateX(-10px);
+    transform: translateX(-10px);
 }
+
 .tittleWork {
     margin: 3vh 0;
 }
@@ -1194,29 +1233,160 @@ transform: translateX(-10px);
         font-size: 2.2vw;
     }
     .threeColums {
-        grid-template-columns: auto ;
+        grid-template-columns: auto;
     }
-
     #backimg {
         height: 27vh;
         background-size: cover;
         background-position: center;
     }
-
-    .twoColums{
+    .twoColums {
         grid-template-columns: auto;
-    width: 76%;
-    margin: auto;
+        width: 76%;
+        margin: auto;
     }
-
     .flex {
         flex-flow: row wrap;
     }
-
     .lastSection a {
         font-size: 5.2vw;
         width: 100%;
         text-align: center;
         margin: 7px;
     }
+}
+
+/* Estilos about */
+
+.twoColumsAbout {
+    display: grid;
+    grid-template-columns: 35% 50%;
+    row-gap: 10vh;
+    column-gap: 5%;
+    width: 100%;
+    padding: 10vh 5%;
+    box-sizing: border-box;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+}
+
+.aboutPage h1 {
+    font-size: 4vw;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.aboutPage li {
+    font-size: 1.5vw;
+    padding: 8px 0;
+    list-style-position: inside;
+}
+
+hr.green {
+    background: #d3ff4a;
+}
+
+hr.blue {
+    background: #8bafef;
+}
+
+hr.line {
+    border: none;
+    height: 6px;
+    width: 10vw;
+    margin: 20px 0 40px 0;
+    border-radius: 20px;
+}
+
+.aboutPage .twoColumsAbout img {
+    width: 80%;
+}
+
+.twoColumsIcons {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-items: center;
+    text-align: center;
+    row-gap: 100px;
+    padding: 85px 3%;
+    box-sizing: content-box;
+    column-gap: 45px;
+}
+
+.twoColumsIcons hr {
+    width: 75px;
+    margin: 20px auto;
+    border: none;
+    height: 4px;
+    background: white;
+    border-radius: 20px;
+}
+
+.twoColumsIcons h3 {
+    font-size: 1.6vw;
+    font-weight: 600;
+    margin-bottom: 13px;
+}
+
+.aboutPage h2 {
+    font-size: 2vw;
+    font-weight: 500;
+    margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .twoColumsAbout {
+        grid-template-columns: auto;
+        text-align: center;
+        row-gap: 50px;
+        padding: 10vh 10%;
+    }
+    .aboutPage h1 {
+        font-size: 8vw;
+        margin-top: 40px;
+        margin-bottom: 0;
+    }
+    .aboutPage .twoColumsAbout img:first-child {
+        grid-row: 2;
+        margin-bottom: 50px;
+    }
+    hr.line {
+        width: 23vw;
+        margin: 20px auto;
+    }
+    .aboutPage .twoColumsAbout img {
+        width: 50%;
+    }
+    .aboutPage li {
+        font-size: 2.5vw;
+    }
+    .aboutPage h2 {
+        font-size: 6vw;
+    }
+    .twoColumsIcons {
+        grid-template-columns: auto auto;
+        padding: 0 10% 80px;
+    }
+    .twoColumsIcons h3 {
+        font-size: 3.6vw;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .twoColumsIcons {
+        grid-template-columns: auto;
+    }
+    .aboutPage li {
+        font-size: 3.5vw;
+    }
+}
+
+
+/* Estilo menu en trabajos */
+
+.worksMenu{
+    background: #07182b;
+    border: 8px solid #07182b;
 }
